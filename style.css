@@ -10,6 +10,8 @@ body{
 	
 }
 
+
+
 .header{
 	box-sizing: border-box;
 	background-color:#75b79e;
@@ -39,8 +41,10 @@ body{
 	margin-left:10px;
 	float:center;
 	vertical-align:bottom;
+	min-width:3%;
 	width:3%;
-	max-width:100%;
+	
+	
 }
 
 .header-title h1{	
@@ -293,17 +297,15 @@ font-size: 38px;
 }
 
 .rodape{
-	
-	box-sizing: border-box;
 	position:fixed;
+	box-sizing: border-box;	
 	padding:0;
-	bottom:0;
-
-    
+	bottom:0;    
     left:0;	
 	width:100%;
-	border-top: 1px solid;
-
+	margin-top:100%;
+	border-top: 1px solid;	
+	!text-align:center; 
 	background-color: white;
 		
 }
@@ -396,16 +398,21 @@ font-size: 38px;
 }
 
 .rodape{	
+	position:fixed;
+	bottom:-1;
 	box-sizing: border-box;
 	padding:0;
 	bottom:0;    
     left:0;	
 	width:100%;
-	border-top:0;
-	background-color: transparent;
 	font-size:10px;
-	position:static;
+	
 		
+}
+
+.header-title img {
+	width:10%;	
+	
 }
 
 
