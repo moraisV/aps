@@ -392,8 +392,24 @@ font-size: 38px;
 	margin-bottom:8%;
 	padding:30px;
 	width:60%;
-	font-size:24px;	
+	font-size:12px;	
 	
+}
+
+.rodape{
+	
+	box-sizing: border-box;
+
+	padding:0;
+	bottom:0;
+
+    
+    left:0;	
+	width:100%;
+	border-top: 1px solid;
+	background-color: white;
+	font-size:10px;
+		
 }
 
 }
