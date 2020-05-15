@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="header">
@@ -20,7 +20,7 @@
 				<div id="drop-01"> 
 					<a href="index.html"> O que é </a> 	
 					<a href="como-reciclar.html"> Como Reciclar</a>			
-								
+							
 				</div>
 			<button id="menu02"> <a href="#"id="link-sus"> Sustentabilidade </a>
 				<div id="drop-02">  
@@ -30,7 +30,7 @@
 				</div>
 			<button id="menu03"> <a href="#"id="link-pol"> Poluição </a>
 				<div id="drop-03">  
-					<a href="poluicao-definicao.html"> Definição de poluição </a> 			
+					<a href="poluicao-definicao.html"> O que é poluição </a> 			
 					 <a href="poluicao-tipos.html"> Tipos de poluição e poluentes</a>			
 					<a href="#"> Efeitos da poluição no ambiente</a> 			
 				</div>
@@ -43,6 +43,60 @@
 				
 			</nav>
 		</div>
+			<div class="sidebar" id="mySidebar"> 
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <button class="collapse" onclick="AbrirColl();">Reciclagem</a> </button>
+					<div class="a-group"> 
+					<a href="index.html"> O que é </a> 	
+					<a href="como-reciclar.html"> Como Reciclar</a>		
+					</div>
+				  <button class="collapse" onclick="AbrirColl();">Sustentabilidade</a> </button>
+					<div class="a-group"> 
+					<a href="sustentabilidade-definicoes.html"> Tipos de Sustentabilidade</a> 			
+					<a href="sustentabilidade-como-praticar.html"> Praticando ações sustentáveis</a>			
+					<a href="sustentabilidade-exemplos.html"> Grandes ações sustentáveis</a>  </div>
+					<button class="collapse" onclick="AbrirColl();">Poluição</a> </button>
+					<div class="a-group"> 
+					<a href="poluicao-definicao.html"> O que é poluição </a> 			
+					<a href="poluicao-tipos.html"> Tipos de poluição e poluentes</a>			
+					<a href="#"> Efeitos da poluição no ambiente</a> 
+					</div>
+				</div>
+				
+			
+				<button class="abrir-coll" onclick="openNav();"> <i class="fa fa-bars"></i> </button>
+				<script>
+				
+	function openNav() {
+	  document.getElementById("mySidebar").style.width = "150px";				  
+	  document.getElementByClassName("header").style.marginLeft= "150px";			  
+	  document.getElementByClassName("main").style.marginLeft= "150px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidebar").style.width = "0";
+	  document.getElementByClassName("header").style.marginLeft= "0";				  
+	  document.getElementByClassName("main").style.marginLeft= "0";
+	  
+	}
+					
+	var coll = document.getElementsByClassName("collapse");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+		  content.style.display = "none";
+		} else {
+		  content.style.display = "block";
+		}
+	  });
+	}
+				
+				</script>
+				
 	</div>
 	<div class="main"> <h2> Exemplos de práticas sustentáveis </h2>
 	<p>	Qualquer pessoa pode praticar ações sustentáveis ao ambiente. Alguns exemplos: <br>
