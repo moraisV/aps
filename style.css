@@ -45,6 +45,7 @@ body{
   padding-top: 60px; 
   transition: 0.5s; 
   text-align:center;
+  border-right:0.1px solid;
   
 	
 	
@@ -59,23 +60,37 @@ body{
 	 outline: none;
 	 display:block;
 	 font-size:14px;
+	 
 	 font-family:Quicksand, sans-serif;
-	
+	cursor:pointer;
+	border-top:0.1px solid;
+	border-bottom:0.1px  solid;
+	border-right:0.1px solid;
+	width:100%;
+}
+
+.sidebar-a2{
+text-decoration:none;
+	transition:0.3s;
+	color:black;
 }
 
 
-.sidebar a {
+.sidebar-link {
   padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-size: 12px;
-  color:white;
+  color:#004400;
   display: block;
   transition: 0.3s;
+  background-color:#a7e9af;
 }
 
-.sidebar a:hover {
-  color: black;
+.sidebar-link:hover {
+  color: white;
 }
+
+
 
 .sidebar .closebtn {
   position: absolute;
@@ -83,7 +98,11 @@ body{
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  text-decoration:none;
+	transition:0.3s;
+	color:black;
 }
+
 .abrir-coll {
   font-size: 20px;
   margin:auto;
@@ -97,6 +116,8 @@ body{
   display:none;
   
 }
+
+
 
 .coll-a{
 	display:none;
@@ -508,6 +529,7 @@ tambem exclui a menubar e adiciona a sidebar, para navegacao mobile*/
 
 .abrir-coll{
 	display:inline-block;
+	
 	
 }
 
